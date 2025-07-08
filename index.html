@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechServices - Desenvolvimento Web & Análise de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span class="logo-text">TechServices</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Início</a>
+                <a href="#about" class="nav-link" data-section="about">Sobre</a>
+                <a href="#services" class="nav-link" data-section="services">Serviços</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experiência</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contato</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                 <h1 class="hero-title">
+                                        <h2></h2>
+                </h1>
+                <h1 class="hero-title">
+                    Desenvolvimento Web &amp;
+                    <span class="gradient-text">Análise de Dados</span>
+                </h1>
+                <p class="hero-description">
+                    Transformo ideias em soluções digitais inovadoras e dados em insights estratégicos para impulsionar seu negócio ao próximo nível.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        Ver Serviços <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                        Entre em Contato
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="assets/profile-photo.jpg" alt="José Antonio Bomfim Santos" class="profile-photo">
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">
+                    Profissional com sólida experiência em análise de dados e desenvolvimento web
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-name">José Antonio Bomfim Santos</h3>
+                    <p class="about-description">
+                        Graduado em Administração de Empresas e graduando em Análise e Desenvolvimento de Sistemas. 
+                        Com mais de 3 anos de experiência em análise de dados empresariais e desenvolvimento de soluções tecnológicas.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <p class="info-title">Idiomas</p>
+                                <p class="info-text">Português, Inglês, Espanhol</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <p class="info-title">Especialização</p>
+                                <p class="info-text">Web Dev & Data Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>3+ Anos</h4>
+                        <p>Análise de Dados</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Full Stack</h4>
+                        <p>Desenvolvimento</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Liderança</h4>
+                        <p>Gestão de Equipes</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-database"></i>
+                        <h4>BI Tools</h4>
+                        <p>MicroStrategy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">
+                    Soluções completas para transformar seu negócio digitalmente
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento Web</h3>
+                    <p class="service-description">
+                        Criação de sites e aplicações web modernas usando React, Next.js, Node.js e tecnologias de ponta.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-arrow-right"></i> Sites Responsivos</li>
+                        <li><i class="fas fa-arrow-right"></i> E-commerce</li>
+                        <li><i class="fas fa-arrow-right"></i> Aplicações Web</li>
+                        <li><i class="fas fa-arrow-right"></i> APIs REST</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="service-title">Consultoria em Análise de Dados</h3>
+                    <p class="service-description">
+                        Transforme seus dados em insights valiosos para tomada de decisões estratégicas.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-arrow-right"></i> Business Intelligence</li>
+                        <li><i class="fas fa-arrow-right"></i> Dashboards Interativos</li>
+                        <li><i class="fas fa-arrow-right"></i> Análise Preditiva</li>
+                        <li><i class="fas fa-arrow-right"></i> Relatórios Automatizados</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="service-title">Integração de Sistemas</h3>
+                    <p class="service-description">
+                        Conecte diferentes sistemas e plataformas para otimizar seus processos empresariais.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-arrow-right"></i> APIs Customizadas</li>
+                        <li><i class="fas fa-arrow-right"></i> Automação de Processos</li>
+                        <li><i class="fas fa-arrow-right"></i> Migração de Dados</li>
+                        <li><i class="fas fa-arrow-right"></i> Sincronização</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiência Profissional</h2>
+                <p class="section-subtitle">
+                    Histórico comprovado em análise de dados e gestão empresarial
+                </p>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="company">Assai Atacadista</h3>
+                            <p class="role">Chefe de Prevenção e Perdas</p>
+                            <div class="period">
+                                <i class="fas fa-calendar"></i>
+                                01/2022 - 04/2024
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            <p class="description">
+                                Análise de dados de quebras e perdas, criação de insights para tomada de decisões, 
+                                acompanhamento de indicadores via MicroStrategy e Consinco.
+                            </p>
+                            <div class="skills">
+                                <span class="skill-tag">Análise de Dados</span>
+                                <span class="skill-tag">Business Intelligence</span>
+                                <span class="skill-tag">Liderança</span>
+                                <span class="skill-tag">MicroStrategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="company">Assai Atacadista</h3>
+                            <p class="role">Chefe de Recebimento</p>
+                            <div class="period">
+                                <i class="fas fa-calendar"></i>
+                                11/2021 - 01/2022
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            <p class="description">
+                                Gestão administrativa do recebimento, análise de notas fiscais e tributações, 
+                                liderança de equipe de depósito.
+                            </p>
+                            <div class="skills">
+                                <span class="skill-tag">Gestão de Equipe</span>
+                                <span class="skill-tag">Análise Fiscal</span>
+                                <span class="skill-tag">Processos</span>
+                                <span class="skill-tag">PEPS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="company">Organizadora de Eventos Ltda</h3>
+                            <p class="role">Assistente Administrativo</p>
+                            <div class="period">
+                                <i class="fas fa-calendar"></i>
+                                12/2015 - 09/2017
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            <p class="description">
+                                Trabalhos em licitações, análise de editais, participação em pregões eletrônicos, 
+                                gestão de contratos.
+                            </p>
+                            <div class="skills">
+                                <span class="skill-tag">Licitações</span>
+                                <span class="skill-tag">Análise de Editais</span>
+                                <span class="skill-tag">Gestão de Contratos</span>
+                                <span class="skill-tag">Pregões</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Pronto para transformar suas ideias em realidade? Vamos conversar!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Informações de Contato</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">jabs_0151@hotmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Telefone</p>
+                                <p class="contact-value">(79) 99607-7721</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jose-antonio-bomfim/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JoseAntonioBomfim/JoseAntonioBomfim" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3 class="form-title">Solicite um Orçamento</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviço</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="web-dev">Desenvolvimento Web</option>
+                                <option value="data-analysis">Consultoria em Análise de Dados</option>
+                                <option value="system-integration">Integração de Sistemas</option>
+                                <option value="other">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Descreva seu projeto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="logo-text">TechServices</span>
+                </div>
+                <p class="footer-text">© 2025 José Antonio Bomfim Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
